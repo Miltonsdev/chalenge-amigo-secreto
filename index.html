@@ -9,23 +9,26 @@
 <body>
   <header>
     <nav>
-      <h1>Juego de amigo Secreto</h1>
+      <p>Juego de amigo Secreto</p>
       <img src="./img/joven-play.png" alt="Joven agarrando la table" title="Joven juega al amigo secreto">
     </nav>
   </header>
   <main>
     <section class="paquete">
       <section class="interno">
-        <h2>Digite el nombre de sus amigos</h2>
+        <h1>Digite el nombre de sus amigos</h1>
         <form action="">
           <div class="input-wrapper">
-            <input type="text" placeholder="Escriba un nombre" class="digitar" required minlength="1">
-            <input type="submit" value="Añadir" class="añadir">
+            <input type="text" placeholder="Escriba un nombre" class="digitar" minlength="1">
+            <!-- <input onclick="agregarNombre();" type="button" value="Añadir" class="añadir"> -->
+            <button type="button" onclick="agregarNombre();" class="añadir">Añadir</button>
           </div>
-          <input type="submit" value="Sortear amigo" class="enviar">
+          <p class="demo"></p>
+          <input type="submit" value="Sortear amigo" class="sortear">
         </form>
       </section>
     </section>
   </main>
+  <script src="app.js"></script>
 </body>
 </html>
